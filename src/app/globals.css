@@ -2,26 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
   }
+
+  h1, h2, h2, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  /* once past small breakpoint, go to 48px. medium breakpt is 60px*/
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+
+ 
+  li {
+    @apply cursor-pointer
+  }
+
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dfff] text-white
+  }
+
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
