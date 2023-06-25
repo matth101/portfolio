@@ -3,13 +3,14 @@ import Link from 'next/link';
 
 const About = () => {
 	return (
-		<div className="w-full md:h-screen p2 flex items-center py-16">
+		<div className="w-full md:h-screen p-2 flex items-center py-16">
 			{/* Text */}
 			<div className="max-w-[1000px] m-auto md:grid grid-cols-3 gap-8 flex items-center">
 				<div className="col-span-2">
-					<p className="pt-2 pb-5 lowercase text-xl tracking-widest text-[#6bb0c2]">
+					<p className="py-2 lowercase text-xl tracking-widest text-[#6bb0c2]">
 						Background
 					</p>
+                    <h2 className='py-4 md:text-3xl'>Who I Am</h2>
 					<p className="py-2 text-gray-600">
 						I'm Matt, a junior at the University of Texas at Dallas
 						(UTD) studying computer science. On my path towards
