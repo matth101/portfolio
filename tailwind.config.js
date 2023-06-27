@@ -7,7 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      keyframes: {
+        fadeIn: "fadeIn",
+      },
     },
   },
   plugins: [],

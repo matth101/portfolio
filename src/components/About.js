@@ -6,7 +6,7 @@ const About = () => {
 		<div className="w-full md:h-screen p-2 flex items-center py-16">
 			{/* Text */}
 			<div className="max-w-[1000px] m-auto md:grid grid-cols-3 gap-8 flex items-center">
-				<div className="col-span-2">
+				<div className="col-span-2 text-lg">
 					<p className="py-2 lowercase text-xl tracking-widest text-[#6bb0c2]">
 						Background
 					</p>

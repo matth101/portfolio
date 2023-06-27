@@ -1,3 +1,16 @@
+
+TODO: 
+- reorganize tabs and content as two separate flexes. abandon the column functionality but try to line it up with About section
+- add dynamically changing content
+
+- add projects sections
+- add contact section
+- finish video
+- dark theme?
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

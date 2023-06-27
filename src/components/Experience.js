@@ -3,6 +3,10 @@
 import { useState } from 'react'
 import JobContent from './JobContent';
 
+import styles from './Experience.module.css'
+
+// TODO : add fade in animation for content
+
 const Experience = () => {
     const [company, setCompany] = useState("BAE Systems")
 
@@ -25,15 +29,15 @@ const Experience = () => {
             role: "Information Technology Intern",
             bullets: [
                 "Simplified container-frame visualization across internal apps, impacting 3000+ internal users and customers",
-                "Saved the company a million dollars"
+                "Trained group of nine new interns during Summer 2022 to undertake intern responsibilities"
             ]
         }
     ]
 
 	return (
-		<div className="w-full md:h-screen p2 flex flex-col items-center py-8">
+		<div className="w-full md:h-screen p-2 flex flex-col items-center py-8">
 			<div className="max-w-[1000px] m-auto flex flex-col justify-start">
-				<p className="pt-2 pb-4 lowercase text-3xl tracking-widest text-[#6bb0c2]">
+				<p className="pt-2 pb-4 lowercase text-2xl tracking-widest text-[#6bb0c2]">
 					Experience
 				</p>
 				<div className="flex">
@@ -54,7 +58,7 @@ const Experience = () => {
 							</div>
 						</div>
 					</div>
-					<div className="ml-5 transition-opacity duration-300">
+					<div className='ml-4'>
                         {contents.map((content, i) => {
                             if (content.id === company) {
                                 return <JobContent key={i} id={content.id} role={content.role} bullets={content.bullets}/>
