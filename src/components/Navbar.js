@@ -1,46 +1,62 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(true);
+	const [shadow, setShadow] = useState(false)
 
 	const handleNav = () => {
 		setNav(!nav);
 	};
 
+	useEffect(() => {
+		const handleShadow = () => {
+			if (window.scrollY >= 90) {
+				setShadow(true)
+			} else {
+				setShadow(false)
+			}
+		}
+		window.addEventListener('scroll', handleShadow);
+	}, [])
+
 	return (
-		<div className="fixed w-full h-20 shadow-xl z-[100]">
+		<div className={shadow 
+			? "fixed w-full h-20 shadow-xl z-[100]"
+			: "fixed w-full h-20 z-[100]" }>
 			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-8">
 				{/* large name here*/}
-				<h3 className="md:text-3xl">MH</h3>
+				<Link href='/#home'>
+					<h3 className="md:text-3xl">MH</h3>
+				</Link>
 				<div>
 					<ul className="hidden md:flex">
-						<Link href="/">
-							<li className="ml-10 text-m hover:border-b">
+						<Link href="/#home">
+							<li className="ml-10 text-m hover:border-b border-[#878787]">
 								home
 							</li>
 						</Link>
-						<Link href="/">
-							<li className="ml-10 text-m hover:border-b">
+						<Link href="/#about">
+							<li className="ml-10 text-m hover:border-b border-[#878787]">
 								about
 							</li>
 						</Link>
-						<Link href="/">
-							<li className="ml-10 text-m hover:border-b">
+						<Link href="/#experience">
+							<li className="ml-10 text-m hover:border-b border-[#878787]">
 								experience
 							</li>
 						</Link>
-						<Link href="/">
-							<li className="ml-10 text-m hover:border-b">
+						<Link href="/#projects">
+							<li className="ml-10 text-m hover:border-b border-[#878787]">
 								projects
 							</li>
 						</Link>
-						<Link href="/">
+						<Link href="/#connect">
 							<li className="ml-10 text-m hover:border-b">
 								connect
 							</li>
@@ -59,9 +75,9 @@ const Navbar = () => {
 							: "fixed left-[-100%] top-0 ease-in duration-500"
 					}>
 					<div>
-						<div className="flex w-full items-center justify-between ">
-							Matt Hui
-							<div onClick={handleNav} className="rounded-xl shadow-md shadow-gray-400 p-3 cursor-pointer">
+						<div className="flex w-full items-center justify-between text-2xl">
+							MH
+							<div onClick={handleNav} className="rounded-xl shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-150">
 								<AiOutlineClose size={20} />
 							</div>
 						</div>
@@ -74,19 +90,19 @@ const Navbar = () => {
 						{/* Menu  content*/}
 						<div>
 							<ul>
-								<Link href="/">
+								<Link href="/#home">
 									<li className="py-4 text-sm">home</li>
 								</Link>
-								<Link href="/">
+								<Link href="/#about">
 									<li className="py-4 text-sm">about</li>
 								</Link>
-								<Link href="/">
+								<Link href="/#experience">
 									<li className="py-4 text-sm">experience</li>
 								</Link>
-								<Link href="/">
+								<Link href="/#projects">
 									<li className="py-4 text-sm">projects</li>
 								</Link>
-								<Link href="/">
+								<Link href="/#connect">
 									<li className="py-4 text-sm">connect</li>
 								</Link>
 							</ul>

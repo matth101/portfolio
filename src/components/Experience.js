@@ -35,7 +35,7 @@ const Experience = () => {
     ]
 
 	return (
-		<div className="w-full md:h-screen p-2 flex flex-col items-center py-8">
+		<div id='experience' className="w-full md:h-screen p-2 flex flex-col items-center py-8">
 			<div className="max-w-[1000px] m-auto flex flex-col justify-start">
 				<p className="pt-2 pb-4 lowercase text-2xl tracking-widest text-[#6bb0c2]">
 					Experience
