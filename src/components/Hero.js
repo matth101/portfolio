@@ -10,10 +10,10 @@ const Hero = () => {
 			<div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
 				<div>
 					<p className="text-sm tracking-widest text-gray-600">
-						let's develop something together
+						let&apos;s develop something together
 					</p>
 					<h1 className="py-4 text-gray-700 md:text-7xl">
-						Hi, I'm{" "}
+						Hi, I&apos;m{" "}
 						<span className="text-[#6bb0c2]">Matt</span>
 					</h1>
 					<p className="py-4 text-gray-600 max-w-[70%] m-auto">
