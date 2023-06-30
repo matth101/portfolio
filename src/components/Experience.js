@@ -18,18 +18,21 @@ const Experience = () => {
     const contents = [
         {
             id: "BAE Systems",
-            role: "Software Engineering Intern",
+            role: "AEGIS Technical Intern | May 2023 - Present",
             bullets: [
-                "Simplified container-frame visualization across internal apps, impacting 3000+ internal users and customers",
-                "Saved the company a million dollars"
+                "Supporting government-classified AEGIS baseline testing as part of subtask’s Command & Decision team",
+                "Exploring acceleration of AEGIS Weapon System integration tests with alert filtering",
+                "Working with Model-based Systems Engineering team to represent AEGIS systems with SysML, Java, and natural language processing"
             ]
         },
         {
             id: "UCVTS",
-            role: "Information Technology Intern",
+            role: "Information Technology Intern | July 2021 - August 2022",
             bullets: [
-                "Simplified container-frame visualization across internal apps, impacting 3000+ internal users and customers",
-                "Trained group of nine new interns during Summer 2022 to undertake intern responsibilities"
+                "Oversaw quality assurance, deployment, and maintenance of 150+ desktops in the school’s technology domain",
+                "Handled troubleshooting and resolution of computer network and software issues for staff and students",
+                "Managed campus-wide network across five schools by addressing hardware repair and software configuration",
+                "Trained group of nine (9) new interns during Summer 2022 to undertake intern responsibilities"
             ]
         }
     ]

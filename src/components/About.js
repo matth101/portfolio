@@ -14,7 +14,7 @@ const About = () => {
 					<p className="py-2 text-gray-600">
 						I&apos;m Matt, a junior at the University of Texas at Dallas
 						(UTD) studying computer science. On my path towards
-						becoming a software engineer, I&apos;ve developed an interest
+						becoming a software engineer, I&apos;ve become interested
 						in optimizing user experience and application
 						performance. In my free time, I enjoy building projects
 						with friends at hackathons, playing piano, or working
