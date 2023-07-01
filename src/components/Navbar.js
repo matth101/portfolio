@@ -15,6 +15,7 @@ const Navbar = () => {
 	const router = useRouter()
 
 	const handleNav = () => {
+		console.log(nav)
 		setNav(!nav);
 	};
 
@@ -109,19 +110,19 @@ const Navbar = () => {
 						<div>
 							<ul>
 								<Link href="/#home">
-									<li className="py-4 text-sm">home</li>
+									<li onClick={handleNav} className="py-4 text-sm">home</li>
 								</Link>
 								<Link href="/#about">
-									<li className="py-4 text-sm">about</li>
+									<li onClick={handleNav} className="py-4 text-sm">about</li>
 								</Link>
 								<Link href="/#experience">
-									<li className="py-4 text-sm">experience</li>
+									<li onClick={handleNav} className="py-4 text-sm">experience</li>
 								</Link>
 								<Link href="/#projects">
-									<li className="py-4 text-sm">projects</li>
+									<li onClick={handleNav} className="py-4 text-sm">projects</li>
 								</Link>
 								<Link href="/#connect">
-									<li className="py-4 text-sm">connect</li>
+									<li onClick={handleNav} className="py-4 text-sm">connect</li>
 								</Link>
 							</ul>
 							{/* icons*/}

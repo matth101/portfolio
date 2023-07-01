@@ -10,7 +10,7 @@ const Projects = () => {
 				</p>
 				<h2 className="py-4 text-xl">What I&apos;ve worked on - most recently</h2>
 				<div className="grid md:grid-cols-2 gap-8">
-					<ProjectItem title='Summer' img={SummerImg} URL='/summer' tools='React, MongoDB, Node.js, AWS S3'/>
+					<ProjectItem title='Summer' img={SummerImg} URL='https://github.com/acm-projects/Summer' tools='React, MongoDB, Node.js, AWS S3'/>
                 </div>
 			</div>
 		</div>

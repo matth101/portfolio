@@ -10,7 +10,6 @@ import Connect from '@/components/Connect'
 export default function Home() {
 	return (
 		<div>
-			<Navbar />
 			<Hero />
 			<About />
 			<Experience />

@@ -19,15 +19,17 @@ const Experience = () => {
         {
             id: "BAE Systems",
             role: "AEGIS Technical Intern | May 2023 - Present",
+            URL: "https://www.baesystems.com/en/home",
             bullets: [
                 "Supporting government-classified AEGIS baseline testing as part of subtask’s Command & Decision team",
                 "Exploring acceleration of AEGIS Weapon System integration tests with alert filtering",
-                "Working with Model-based Systems Engineering team to represent AEGIS systems with SysML, Java, and natural language processing"
+                "Working with Model-based Systems Engineering team to represent AEGIS systems with SysML, Groovy, and natural language processing"
             ]
         },
         {
             id: "UCVTS",
             role: "Information Technology Intern | July 2021 - August 2022",
+            URL: "https://www.ucvts.org/",
             bullets: [
                 "Oversaw quality assurance, deployment, and maintenance of 150+ desktops in the school’s technology domain",
                 "Handled troubleshooting and resolution of computer network and software issues for staff and students",
@@ -64,7 +66,7 @@ const Experience = () => {
 					<div className='ml-4'>
                         {contents.map((content, i) => {
                             if (content.id === company) {
-                                return <JobContent key={i} id={content.id} role={content.role} bullets={content.bullets}/>
+                                return <JobContent key={i} id={content.id} role={content.role} URL={content.URL} bullets={content.bullets}/>
                             }
                         })}
 					</div>
