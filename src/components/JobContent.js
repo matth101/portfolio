@@ -1,12 +1,16 @@
 const JobContent = (props) => {
-	const { id, role, URL, bullets } = props;
+	const { role, company, duration, URL, bullets } = props;
 	return (
 			<div>
 				{/* dynamic content section */}
-				<a href={URL} target="_blank" rel="noreferrer">
-					<div className="md:text-3xl p-0 hover:underline">{id}</div>
-				</a>
-				<div className="mb-3 mt-2 text-[#5facbf] font-bold">{role}</div>
+				<div className="md:text-3xl p-0">{role}</div>
+
+				<div className="mb-3 mt-2 text-[#5facbf] font-bold">
+					<a className="hover:underline" href={URL} target="_blank" rel="noreferrer">
+						{company} 
+					</a>
+					{duration}
+				</div>
 				<ul className="list-disc pl-4 text-lg">
 					{bullets.map((bullet, i) => (
 						<li key={i} className="mb-2">

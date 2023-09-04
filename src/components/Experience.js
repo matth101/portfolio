@@ -11,32 +11,35 @@ const Experience = () => {
     const [company, setCompany] = useState("BAE Systems")
 
     const handleCompany = (companyName) => {
-        console.log(companyName)
+        // console.log(companyName)
         setCompany(companyName)
     }
 
     const contents = [
         {
-            id: "BAE Systems",
-            role: "AEGIS Technical Intern | May 2023 - Present",
+            role: "AEGIS Technical Intern",
+            company: "BAE Systems",
+            duration: " | May 2023 - August 2023",
             URL: "https://www.baesystems.com/en/home",
             bullets: [
-                "Supporting government-classified AEGIS baseline testing as part of subtask’s Command & Decision team",
-                "Exploring acceleration of AEGIS Weapon System integration tests with alert filtering",
-                "Working with Model-based Systems Engineering team to represent AEGIS systems with SysML, Groovy, and natural language processing"
+                "Primarily supported baseline testing for AEGIS, a proprietary software system for US naval combat, as part of subtask's Command and Decision team",
+                "Migrated AEGIS specification data from flat-file document to model-based representation using Java, SysML & natural language processing",
+                "Active hold of Secret security clearance"
             ]
         },
         {
-            id: "UCVTS",
-            role: "Information Technology Intern | July 2021 - August 2022",
+            role: "Information Technology Intern",
+            company: "UCVTS", 
+            duration: " | July 2021 - August 2022",
             URL: "https://www.ucvts.org/",
             bullets: [
                 "Oversaw quality assurance, deployment, and maintenance of 150+ desktops in the school’s technology domain",
                 "Handled troubleshooting and resolution of computer network and software issues for staff and students",
                 "Managed campus-wide network across five schools by addressing hardware repair and software configuration",
-                "Trained group of nine (9) new interns during Summer 2022 to undertake intern responsibilities"
+                "Trained group of nine new interns during Summer 2022 to undertake intern responsibilities"
             ]
         }
+        
     ]
 
 	return (
@@ -65,8 +68,9 @@ const Experience = () => {
 					</div>
 					<div className='ml-4'>
                         {contents.map((content, i) => {
-                            if (content.id === company) {
-                                return <JobContent key={i} id={content.id} role={content.role} URL={content.URL} bullets={content.bullets}/>
+                            if (content.company === company) {
+                                return <JobContent key={i} role={content.role} company={content.company} 
+                                    duration={content.duration} URL={content.URL} bullets={content.bullets}/>
                             }
                         })}
 					</div>
