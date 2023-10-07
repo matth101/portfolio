@@ -3,10 +3,6 @@
 import { useState } from 'react'
 import JobContent from './JobContent';
 
-import styles from './Experience.module.css'
-
-// TODO : add fade in animation for content
-
 const Experience = () => {
     const [company, setCompany] = useState("BAE Systems")
 
