@@ -16,7 +16,7 @@ const About = () => {
 						(UTD) studying computer science! I&apos;m interested
 						in optimizing user experience, application
 						performance, and developing robust software overall. In my free time, I enjoy building projects
-						with friends at hackathons, playing piano, or playing for UTD's ultimate frisbee team.
+						with friends at hackathons, playing piano, or playing for UTD&apos;s ultimate frisbee team.
 					</p>
 					<p className="py-2 text-gray-600">
 						I&apos;m always looking forward towards future creative
