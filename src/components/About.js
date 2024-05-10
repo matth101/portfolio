@@ -12,13 +12,11 @@ const About = () => {
 					</p>
                     <h2 className='py-4 md:text-3xl'>Who I Am</h2>
 					<p className="py-2 text-gray-600">
-						I&apos;m Matt, a junior at the University of Texas at Dallas
-						(UTD) studying computer science. On my path towards
-						becoming a software engineer, I&apos;ve become interested
-						in optimizing user experience and application
-						performance. In my free time, I enjoy building projects
-						with friends at hackathons, playing piano, or working
-						out & practicing with the UTD ultimate frisbee team.
+						I&apos;m Matt, and I'm currently at the University of Texas at Dallas
+						(UTD) studying computer science! I'm interested
+						in optimizing user experience, application
+						performance, and developing robust software overall. In my free time, I enjoy building projects
+						with friends at hackathons, playing piano, or playing for UTD's ultimate frisbee team.
 					</p>
 					<p className="py-2 text-gray-600">
 						I&apos;m always looking forward towards future creative

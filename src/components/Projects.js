@@ -2,6 +2,7 @@ import SummerImg from '/public/summer.gif'
 import WaterView from '/public/waterviewFront.gif'
 import ProjectItem from "./ProjectItem";
 import Noted from '/public/noted.gif'
+import Soundscape from '/public/soundscape.png'
 
 const Projects = () => {
 	return (
@@ -12,7 +13,9 @@ const Projects = () => {
 				</p>
 				<h2 className="py-4 text-xl">What I&apos;ve worked on - most recently</h2>
 				<div className="grid md:grid-cols-2 gap-8">
-					<ProjectItem title='WaterView' img={WaterView} URL='https://github.com/matth101/WaterView' tools='React, Vite, Python, GCP'
+					<ProjectItem title='Soundscape' img={Soundscape} URL='https://devpost.com/software/soundscape-u19mo7' tools='Python, GCP, Meta AI, Flutter'
+						description='Immersive, generative, musical landscapes' height={200} width={276} />
+					<ProjectItem title='WaterView' img={WaterView} URL='https://devpost.com/software/waterview' tools='React, Vite, Python, GCP'
 						description='Real-time, comprehensive water insights' />
 					<ProjectItem title='Summer' img={SummerImg} URL='https://github.com/acm-projects/Summer' tools='React, MongoDB, Node.js, AWS S3, OpenAI'
 						description='Concise summary and supplementary question generation for YouTube videos' />

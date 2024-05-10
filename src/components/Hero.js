@@ -23,7 +23,7 @@ const Hero = () => {
 				opacity: isFirstMount ? 1 : 0,
 				y: isFirstMount ? 0 : 50,
 			}}
-			transition={{ duration: 0.75 }}
+			transition={{ duration: 0.6 }}
 		>
 			<div id="home" className="w-full h-screen text-center">
 				<div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
@@ -36,8 +36,8 @@ const Hero = () => {
 							<span className="text-[#6bb0c2]">Matt</span>
 						</h1>
 						<p className="py-4 text-gray-600 max-w-[70%] m-auto">
-							A student and aspiring software engineer focused on
-							pursuing learning opportunities.
+							Aspiring full-stack software engineer focused on
+							pursuing learning opportunities
 						</p>
 						<div className="flex items-center justify-between max-w-[330px] m-auto py-4">
 							<a href="https://www.linkedin.com/in/matthewhui001/" target="_blank" rel="noreferrer">
